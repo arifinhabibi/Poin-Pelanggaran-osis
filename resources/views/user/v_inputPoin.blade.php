@@ -95,20 +95,45 @@
                             <div class="row justify-content-center">
                                 <input type="number" name="data_siswa_model_id" value="{{ $item->id_dataSiswa }}" hidden>
                                 <div class="col-md-3 mb-2">
-                                    <label for="topi{{ $item->id_dataSiswa }}">Topi(-10)</label>
-                                    <input type="checkbox" value="-10" name="topi" id="topi{{ $item->id_dataSiswa }}">
+                                    <label for="topi{{ $item->id_dataSiswa }}">Kesiangan</label>
+                                    <input type="checkbox" value="-5" name="kesiangan" id="topi{{ $item->id_dataSiswa }}">
                                 </div>
                                 <div class="col-md-3 mb-2">
-                                    <label for="kesiangan{{ $item->id_dataSiswa }}">Kesiangan(-20)</label>
-                                    <input type="checkbox" value="-20" name="kesiangan" id="kesiangan{{ $item->id_dataSiswa }}">
+                                    <label for="kesiangan{{ $item->id_dataSiswa }}">alfa</label>
+                                    <input type="checkbox" value="-5" name="alfa" id="kesiangan{{ $item->id_dataSiswa }}">
                                 </div>
                                 <div class="col-md-3 mb-2">
-                                    <label for="rambut{{ $item->id_dataSiswa }}">Rambut(-15)</label>
-                                    <input type="checkbox" value="-15" name="rambut" id="rambut{{ $item->id_dataSiswa }}">
+                                    <label for="rambut{{ $item->id_dataSiswa }}">Tidak Membawa Kitab Suci</label>
+                                    <input type="checkbox" value="-5" name="tidak_bawa_kitab" id="rambut{{ $item->id_dataSiswa }}">
                                 </div>
                                 <div class="col-md-3 mb-2">
-                                    <label for="atribut{{ $item->id_dataSiswa }}">Atribut(-5)</label>
+                                    <label for="atribut{{ $item->id_dataSiswa }}">Atribut</label>
                                     <input type="checkbox" value="-5" name="atribut" id="atribut{{ $item->id_dataSiswa }}">
+                                </div>
+                                
+                                <div class="col-md-3 mb-2">
+                                    <label for="perilaku_tidak_sesuai_pelajar{{ $item->id_dataSiswa }}">Perilaku Tidak Sesuai Pelajar</label>
+                                    <input type="checkbox" value="-25" name="perilaku_tidak_sesuai_pelajar" id="perilaku_tidak_sesuai_pelajar{{ $item->id_dataSiswa }}">
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="pelanggaran_konten{{ $item->id_dataSiswa }}">Pelanggaran Konten</label>
+                                    <input type="checkbox" value="-25" name="pelanggaran_konten" id="pelanggaran_konten{{ $item->id_dataSiswa }}">
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="narkoba_serta_napza{{ $item->id_dataSiswa }}">Narkoba Serta Napza</label>
+                                    <input type="checkbox" value="-50" name="narkoba_serta_napza" id="narkoba_serta_napza{{ $item->id_dataSiswa }}">
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="pornografi_pornoaksi_pencemaran_nama_baik{{ $item->id_dataSiswa }}">Pornografi, Pornoaksi, Pencemaran Nama Baik</label>
+                                    <input type="checkbox" value="-50" name="pornografi_pornoaksi_pencemaran_nama_baik" id="pornografi_pornoaksi_pencemaran_nama_baik{{ $item->id_dataSiswa }}">
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="pelanggaran_elektronik{{ $item->id_dataSiswa }}">Pelanggaran Elektronik</label>
+                                    <input type="checkbox" value="-10" name="pelanggaran_elektronik" id="pelanggaran_elektronik{{ $item->id_dataSiswa }}">
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="pelanggaran_kendaraan{{ $item->id_dataSiswa }}">Pelanggaran Kendaraan</label>
+                                    <input type="checkbox" value="-5" name="pelanggaran_kendaraan" id="pelanggaran_kendaraan{{ $item->id_dataSiswa }}">
                                 </div>
                                     <input type="text" value="{{ date('l, d F Y') }}" name="tanggal" hidden>
                             </div>

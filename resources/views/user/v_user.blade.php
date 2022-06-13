@@ -52,7 +52,7 @@ $no = 1;
                         </td>
                         <td>
                             <button data-toggle="modal" data-target="#detailPoin{{ $item->id_dataSiswa }}" type="button"
-                                class="btn btn-outline-info">detail poin</button>
+                                class="btn btn-outline-info">Riwayat</button>
                         </td>
                         </tr>
                         @endif
@@ -107,26 +107,46 @@ $a = 1;
                             <tr class="text-center">
                                 <td>{{ $a++ }}</td>
                                 <td>
-                                    @if ($poin->topi != null)
-                                        Topi @if ($poin->kesiangan != null)|@endif
+                                    @if ($poin->kesiangan != null)
+                                        Kesiangan @if ($poin->alfa != null)|@endif
                                     @endif
                                     
-                                    @if ($poin->kesiangan != null)
-                                        Kesiangan @if ($poin->rambut != null)|@endif
+                                    @if ($poin->alfa != null)
+                                        Alfa @if ($poin->Tidak_bawa_kitab != null)|@endif
                                     @endif
 
-                                    @if ($poin->rambut != null)
-                                        Rambut @if ($poin->atribut != null)|@endif
+                                    @if ($poin->Tidak_bawa_kitab != null)
+                                        Tidak Bawa Kitab Suci @if ($poin->atribut != null)|@endif
                                     @endif
 
                                     @if ($poin->atribut != null)
-                                        Atribut
+                                        Atribut @if ($poin->perilaku_tidak_sesuai_pelajar != null)|@endif
+                                    @endif
+
+                                    @if ($poin->perilaku_tidak_sesuai_pelajar != null)
+                                        Perilaku Tidak Sesuai Pelajar @if ($poin->pelanggaran_konten != null)|@endif
+                                    @endif
+
+                                    @if ($poin->pelanggaran_konten != null)
+                                        Atribut @if ($poin->narkoba_serta_napza != null)|@endif
+                                    @endif
+
+                                    @if ($poin->narkoba_serta_napza != null)
+                                        Narkoba Serta Napza @if ($poin->pelanggaran_elektronik != null)|@endif
+                                    @endif
+
+                                    @if ($poin->pelanggaran_elektronik != null)
+                                        Pelanggaran Elektronik @if ($poin->pelanggaran_kendaraan != null)|@endif
+                                    @endif
+
+                                    @if ($poin->pelanggaran_kendaraan != null)
+                                        Pelanggaran Kendaraan
                                     @endif
                                 </td>
 
                                 <td>
                                     @php
-                                        $point = $poin['topi'] + $poin['kesiangan'] + $poin['rambut'] + $poin['atribut'];
+                                        $point = $poin['kesiangan'] + $poin['alfa'] + $poin['Tidak_bawa_kitab'] + $poin['atribut'] + $poin['perilaku_tidak_sesuai_pelajar'] + $poin['pelanggaran_konten'] + $poin['narkoba_serta_napza'] + $poin['pelanggaran_elektronik'] + $poin['pelanggaran_kendaraan'];
                                         echo $point;
                                     @endphp
                                 </td>

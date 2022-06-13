@@ -25,7 +25,7 @@ class userController extends Controller
     public function inputPoinStore(Request $request, $id_dataSiswa){
         $dataSiswa = dataSiswaModel::find($id_dataSiswa);
         
-        $dataSiswa->point = $dataSiswa->point +  $request['topi'] + $request['kesiangan'] + $request['rambut'] + $request['atribut'];
+        $dataSiswa->point = $dataSiswa->point +  $request['kesiangan'] + $request['alfa'] + $request['Tidak_bawa_kitab'] + $request['atribut'] + $request['perilaku_tidak_sesuai_pelajar'] + $request['pelanggaran_konten'] + $request['narkoba_serta_napza'] + $request['pornografi_pornoaksi_pencemaran_nama_baik'] + $request['pelanggaran_elektronik'] + $request['pelanggaran_kendaraan'];
         $dataSiswa->save();
 
 
