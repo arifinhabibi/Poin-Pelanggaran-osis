@@ -74,7 +74,7 @@ $a = 1;
         <div class="modal-content">
             <div class="modal-body">
                 <div class="row mb-3">
-                    <div class="col-md-9">
+                    <div class="col-md-10">
                         <h5>Poin Pelanggaran</h5>
                         <h6 class="modal-title" id="staticBackdropLabel">Nama : {{ $item->nama }}</h6>
                         @foreach ($data as $items)
@@ -86,8 +86,8 @@ $a = 1;
                         @endif
                         @endforeach
                     </div>
-                    <div class="col-md-2">
-                        <a href="" class="btn btn-primary mt-4 ml-4">Print</a>
+                    <div class="col-md-1">
+                        <a href="{{ route('print', $item->id_dataSiswa) }}" class="btn btn-primary mt-4 ml-4">Print</a>
                     </div>
 
                 </div>

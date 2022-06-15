@@ -16,6 +16,13 @@ class userController extends Controller
         return view('user.v_user', \compact('data', 'dataSiswa', 'poinPelanggaran'));
     }
     
+    public function printData($id_dataSiswa){
+        $dataSiswa = dataSiswaModel::find($id_dataSiswa);
+        $data = jurusanModel::all();
+        $poinPelanggaran = poinPelanggaranModel::all();
+        return view('user.v_print', \compact('data', 'dataSiswa', 'poinPelanggaran'));
+    }
+    
     public function inputPoin(){
         $data = jurusanModel::all();
         $dataSiswa = dataSiswaModel::all();

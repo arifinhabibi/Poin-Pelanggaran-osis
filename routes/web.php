@@ -35,6 +35,8 @@ Route::group(['middleware' => ['auth', 'akses:user']], function(){
     Route::get('/input-poin', [userController::class, 'inputPoin'])->name('inputPoin');
     Route::post('/input-/{id_dataSiswa}/proses', [userController::class, 'inputPoinStore'])->name('inputPoinStore');
 
+    Route::get('/user-kontrol/print-data-siswa/{id_dataSiswa}', [userController::class, 'printData'])->name('print');
+
 });
 
 
