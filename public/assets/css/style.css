@@ -3,4 +3,58 @@
 .img_logo {
     height: 50px;
     width: 50px;
-  }
+}
+.akl {
+  padding: 15px 25px;
+}
+.akl:hover {
+  background-color: #B4A190;
+  border-radius: 10px;
+  padding: 15px 25px;
+  color: #fff;
+}
+.bdp {
+  padding: 15px 25px;
+}
+.bdp:hover {
+  background-color: #ffe600;
+  border-radius: 10px;
+  padding: 15px 25px;
+  color: #000;
+}
+.otkp {
+  padding: 15px 25px;
+}
+.otkp:hover {
+  background-color: #e7008f;
+  border-radius: 10px;
+  padding: 15px 25px;
+  color: #fff;
+}
+.rpl {
+  padding: 15px 25px;
+}
+.rpl:hover {
+  background-color: #0084ff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  color: #fff;
+}
+.tkj {
+  padding: 15px 25px;
+}
+.tkj:hover {
+  background-color: #0084ff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  color: #fff;
+}
+.dg {
+  padding: 15px 25px;
+}
+.dg:hover {
+  background-color: #B2B3B7;
+  border-radius: 10px;
+  padding: 15px 25px;
+  color: rgb(255, 255, 255);
+}

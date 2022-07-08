@@ -27,7 +27,8 @@ return new class extends Migration
             $table->integer('pornografi_pornoaksi_pencemaran_nama_baik')->nullable();
             $table->integer('pelanggaran_elektronik')->nullable();
             $table->integer('pelanggaran_kendaraan')->nullable();
-            
+
+            $table->string('penginput');
             $table->string('tanggal');
             $table->timestamps();
         });

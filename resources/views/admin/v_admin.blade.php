@@ -31,13 +31,13 @@
 <div class="row">
     @foreach ($data as $item)
     @if ($item->jurusan == "Akuntansi dan Keuangan Lembaga")
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xl-4 col-md-6 mb-4">
         <div class="card border-left-primary shadow h-100 py-2">
             <div class="card-body">
-                <a href="{{ route('dataSiswa', $item->id ) }}">
-                    <div class="row no-gutters align-items-center">
+                <a href="{{ route('dataSiswa', $item->id ) }}" class="text-decoration-none text-primary">
+                    <div class="row no-gutters align-items-center akl" >
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Kelas {{ $item->kelas }}
+                            <div class="text-xs font-weight-bold text-uppercase mb-1">Kelas {{ $item->kelas }}
                                 {{ $item->jurusan }} {{ $item->group }}</div>
                         </div>
                         <div class="col-auto">
@@ -68,13 +68,13 @@
 <div class="row">
     @foreach ($data as $item)
     @if ($item->jurusan == "Bisnis Daring dan Pemasaran")
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xl-4 col-md-6 mb-4">
         <div class="card border-left-primary shadow h-100 py-2">
             <div class="card-body">
-                <a href="{{ route('dataSiswa', $item->id ) }}">
-                    <div class="row no-gutters align-items-center">
+                <a href="{{ route('dataSiswa', $item->id ) }}" class="text-decoration-none text-primary">
+                    <div class="row no-gutters align-items-center bdp">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Kelas {{ $item->kelas }}
+                            <div class="text-xs font-weight-bold  text-uppercase mb-1">Kelas {{ $item->kelas }}
                                 {{ $item->jurusan }} {{ $item->group }}</div>
                         </div>
                         <div class="col-auto">
@@ -104,13 +104,13 @@
 <div class="row">
     @foreach ($data as $item)
     @if ($item->jurusan == "Otomatisasi dan Tata Kelola Perkantoran")
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xl-4 col-md-6 mb-4">
         <div class="card border-left-primary shadow h-100 py-2">
             <div class="card-body">
-                <a href="{{ route('dataSiswa', $item->id ) }}">
-                    <div class="row no-gutters align-items-center">
+                <a href="{{ route('dataSiswa', $item->id ) }}" class="text-decoration-none text-primary">
+                    <div class="row no-gutters align-items-center otkp">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Kelas {{ $item->kelas }}
+                            <div class="text-xs font-weight-bold  text-uppercase mb-1">Kelas {{ $item->kelas }}
                                 {{ $item->jurusan }} {{ $item->group }}</div>
                         </div>
                         <div class="col-auto">
@@ -140,13 +140,13 @@
 <div class="row">
     @foreach ($data as $item)
     @if ($item->jurusan == "Rekayasa Perangkat Lunak")
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xl-4 col-md-6 mb-4">
         <div class="card border-left-primary shadow h-100 py-2">
             <div class="card-body">
-                <a href="{{ route('dataSiswa', $item->id ) }}">
-                    <div class="row no-gutters align-items-center">
+                <a href="{{ route('dataSiswa', $item->id ) }}" class="text-decoration-none text-primary">
+                    <div class="row no-gutters align-items-center rpl">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Kelas {{ $item->kelas }}
+                            <div class="text-xs font-weight-bold  text-uppercase mb-1">Kelas {{ $item->kelas }}
                                 {{ $item->jurusan }} {{ $item->group }}</div>
                         </div>
                         <div class="col-auto">
@@ -176,13 +176,13 @@
 <div class="row">
     @foreach ($data as $item)
     @if ($item->jurusan == "Teknik Komputer dan Jaringan")
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xl-4 col-md-6 mb-4">
         <div class="card border-left-primary shadow h-100 py-2">
             <div class="card-body">
-                <a href="{{ route('dataSiswa', $item->id ) }}">
-                    <div class="row no-gutters align-items-center">
+                <a href="{{ route('dataSiswa', $item->id ) }}" class="text-decoration-none text-primary">
+                    <div class="row no-gutters align-items-center tkj">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Kelas {{ $item->kelas }}
+                            <div class="text-xs font-weight-bold  text-uppercase mb-1">Kelas {{ $item->kelas }}
                                 {{ $item->jurusan }} {{ $item->group }}</div>
                         </div>
                         <div class="col-auto">
@@ -212,13 +212,13 @@
 <div class="row">
     @foreach ($data as $item)
     @if ($item->jurusan == "Desain Grafika")
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xl-4 col-md-6 mb-4">
         <div class="card border-left-primary shadow h-100 py-2">
             <div class="card-body">
-                <a href="{{ route('dataSiswa', $item->id ) }}">
-                    <div class="row no-gutters align-items-center">
+                <a href="{{ route('dataSiswa', $item->id ) }}" class="text-decoration-none text-primary">
+                    <div class="row no-gutters align-items-center dg">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Kelas {{ $item->kelas }}
+                            <div class="text-xs font-weight-bold  text-uppercase mb-1">Kelas {{ $item->kelas }}
                                 {{ $item->jurusan }} {{ $item->group }}</div>
                         </div>
                         <div class="col-auto">
@@ -248,10 +248,10 @@
 <div class="row">
     @foreach ($data as $item)
     @if ($item->jurusan == "Teknik Pemesinan")
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xl-4 col-md-6 mb-4">
         <div class="card border-left-primary shadow h-100 py-2">
             <div class="card-body">
-                <a href="{{ route('dataSiswa', $item->id ) }}">
+                <a href="{{ route('dataSiswa', $item->id ) }}" class="text-decoration-none">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Kelas {{ $item->kelas }}
@@ -284,10 +284,10 @@
 <div class="row">
     @foreach ($data as $item)
     @if ($item->jurusan == "Teknik dan Bisnis Sepeda Motor")
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xl-4 col-md-6 mb-4">
         <div class="card border-left-primary shadow h-100 py-2">
             <div class="card-body">
-                <a href="{{ route('dataSiswa', $item->id ) }}">
+                <a href="{{ route('dataSiswa', $item->id ) }}" class="text-decoration-none">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Kelas {{ $item->kelas }}
@@ -320,10 +320,10 @@
 <div class="row">
     @foreach ($data as $item)
     @if ($item->jurusan == "Teknik Logistik")
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xl-4 col-md-6 mb-4">
         <div class="card border-left-primary shadow h-100 py-2">
             <div class="card-body">
-                <a href="{{ route('dataSiswa', $item->id ) }}">
+                <a href="{{ route('dataSiswa', $item->id ) }}" class="text-decoration-none">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Kelas {{ $item->kelas }}
@@ -356,10 +356,10 @@
 <div class="row">
     @foreach ($data as $item)
     @if ($item->jurusan == "Tata Boga")
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xl-4 col-md-6 mb-4">
         <div class="card border-left-primary shadow h-100 py-2">
             <div class="card-body">
-                <a href="{{ route('dataSiswa', $item->id ) }}">
+                <a href="{{ route('dataSiswa', $item->id ) }}" class="text-decoration-none">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Kelas {{ $item->kelas }}

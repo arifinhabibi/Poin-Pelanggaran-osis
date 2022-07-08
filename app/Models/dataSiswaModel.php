@@ -13,7 +13,13 @@ class dataSiswaModel extends Model
     
     protected $guarded = [];
 
+    public $timestamps = false;
+    
     public function dataSiswaToJurusan(){
         return $this->belongsTo('App\Models\jurusanModel');
+    }
+
+    public function dataSiswaToPoinPelanggaran(){
+        return $this->hasMany('App\Models\poinPelanggaranModel');
     }
 }

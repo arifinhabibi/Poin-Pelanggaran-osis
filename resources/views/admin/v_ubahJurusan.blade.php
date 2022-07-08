@@ -8,7 +8,7 @@
 <div class="row justify-content-center mb-4 mt-5">
     <h4>Ubah Data Jurusan</h4>
 </div>
-<form action="" method="post" enctype="multipart/form-data">
+<form action="/admin-kontrol/ubah-data-jurusan/{{ $data->id }}/proses" method="post" enctype="multipart/form-data">
     @csrf
     <div class="row justify-content-center">
 

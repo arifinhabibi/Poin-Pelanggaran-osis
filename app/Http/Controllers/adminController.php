@@ -77,4 +77,16 @@ class adminController extends Controller
         $data = jurusanModel::find($id);
         return view('admin.v_ubahJurusan', \compact('data'));
     }
+
+    public function ubahDataJurusanStore(Request $request, $id){
+        $data = jurusanModel::find($id);
+        $data->update($request->all());
+        if ($request->hasFile('logo')) {
+            # code...
+            $request->file('logo')->move('assets/img/jurusan', $request->file('logo')->getClientOriginalName());
+            $data->logo = $request->file('logo')->getClientOriginalName();
+            $data->save();
+        }
+        return redirect()->route('admin');
+    }
 }

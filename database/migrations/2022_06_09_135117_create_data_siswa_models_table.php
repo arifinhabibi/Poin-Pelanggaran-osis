@@ -21,7 +21,6 @@ return new class extends Migration
             $table->string('nis');
             $table->string('nama');
             $table->integer('point');
-            $table->timestamps();
         });
     }
 

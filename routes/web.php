@@ -20,20 +20,24 @@ use App\Http\Controllers\adminController;
 Route::get('/masuk', [authController::class, 'login'])->name('login');
 Route::post('/masuk-proses', [authController::class, 'loginStore'])->name('loginStore');
 Route::get('logout', [authController::class, 'logout'])->name('logout');
+Route::get('/ubah-kata-sandi/{id}', [authController::class, 'changePass'])->name('changePass');
+Route::post('/ubah-kata-sandi/{id}/proses', [authController::class, 'changePassStore'])->name('changePassStore');
 
 
 // umum
 Route::get('/', [vanderCodeController::class, 'beranda'])->name('beranda')->middleware('auth');
+Route::get('/print-data-siswa-yang-melanggar', [vanderCodeController::class, 'print'])->name('printAll');
 
 
 
 // user area
 Route::group(['middleware' => ['auth', 'akses:user']], function(){
-    Route::get('/user-kontrol', [userController::class, 'user'])->name('user');
 
     // input poin siswa
-    Route::get('/input-poin', [userController::class, 'inputPoin'])->name('inputPoin');
-    Route::post('/input-/{id_dataSiswa}/proses', [userController::class, 'inputPoinStore'])->name('inputPoinStore');
+    Route::post('/input-poin/{id_dataSiswa}/proses', [userController::class, 'inputPoinStore'])->name('inputPoinStore');
+
+    Route::get('/menginput-poin-siswa', [userController::class, 'inputPoin2'])->name('inputPoin2');
+    Route::get('/menginput-poin-siswa/kelas/{id}', [userController::class, 'kelas'])->name('kelas');
 
     Route::get('/user-kontrol/print-data-siswa/{id_dataSiswa}', [userController::class, 'printData'])->name('print');
 
@@ -66,6 +70,7 @@ Route::group(['middleware' => ['auth', 'akses:admin']], function(){
 
     // ubah data jurusan
     Route::get('/admin-kontrol/ubah-data-jurusan/{id}', [adminController::class, 'ubahDataJurusan'])->name('ubahDataJurusan');
+    Route::post('/admin-kontrol/ubah-data-jurusan/{id}/proses', [adminController::class, 'ubahDataJurusanStore'])->name('ubahDataJurusanStore');
 
 });
 
